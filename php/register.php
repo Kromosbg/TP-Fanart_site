@@ -53,7 +53,7 @@ VALUES ('Ivon', 'Grigoriev', sentad@abv.bg)")	;
 
 
 
-  <form action="insert.php" method="post">
+ 
   <html>
 <body>
 
@@ -67,6 +67,4 @@ VALUES ('Ivon', 'Grigoriev', sentad@abv.bg)")	;
 
 </body>
 </html>
-</form>
-
 
