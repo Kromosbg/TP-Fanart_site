@@ -26,4 +26,12 @@ WHERE ID=1");
 
 mysqli_close($con);
 ?> 
- 
+  
+ <html>
+<body>
+
+Welcome <?php echo $_POST["Username"]; ?><br>
+Your email address is: <?php echo $_POST["Email"]; ?>
+
+</body>
+</html>
