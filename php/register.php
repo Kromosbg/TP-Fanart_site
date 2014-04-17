@@ -60,11 +60,10 @@ VALUES ('Ivon', 'Grigoriev', sentad@abv.bg)")	;
 <form action="insert.php" method="post">
 
 <br>Username: <input type="text" name="Username"></br>
-<br>Password: <input type="text" name="Password"></br>
+<br>Password: <input type="password" name="Password"></br>
 <br>Email: <input type="text" name="Email"></br>
 <input type="submit">
 </form>
 
 </body>
 </html>
-
