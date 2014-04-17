@@ -1,8 +1,9 @@
+<html>
 <body>
 
-<form action="script.php" method="post">
+<form action="succes.php" method="post">
 Name: <input type="text" name="name"><br>
-Password: <input type="text" name="Password"><br>
+Password: <input type="password" name="Password"><br>
 <input type="submit">
 </form>
 
