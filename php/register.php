@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect('localhost','root', '235101Bg', 'my_db');
+$con=mysqli_connect('localhost','root', '235101Bg');
 // Check connection
 if (mysqli_connect_errno())
   {
@@ -9,54 +9,31 @@ if (mysqli_connect_errno())
   { 
    echo  ("Bro we rock") ; 
   }
+ if (isset($_POST['submit'])) { 
 
-// Create database
-$sql="CREATE DATABASE my_db";
-if (mysqli_query($con,$sql))
-  {
-  echo "Database my_db created successfully";
-  }
-else
-  {
-  echo ("Error creating database: ") . mysqli_error($con);
-  }
+ if (!$_POST['Username'] | !$_POST['Password'] | !$_POST['Email'] ) {
 
- 
-$sql="CREATE TABLE Register
-(ID INT NOT NULL AUTO_INCREMENT, 
-PRIMARY KEY(ID),
-Username CHAR(31),
-Password CHAR(31),
-Email CHAR(31)
-)";	
-	
-// Execute query
-if (mysqli_query($con,$sql))
-  {
-  echo "Table persons created successfully ";
-  }
-else
-  {
-  echo "Error creating table: " . mysqli_error($con);
-  }
-	
+ 		die('You did not complete all of the required fields');
 
-	
-mysql_query($con,"INSERT INTO Register (Username, Password, Email)
-VALUES ('Ivon', 'Grigoriev', sentad@abv.bg)")	;
-
-
-
-
+ 	}
+  
 ?>
 
 
 
 
  
-  <html>
-<body>
+<html>
+<head>
+<style>
+body
+{
+background-color:#D4EEF7;;
+}
+</style>
+</head>
 
+<body>
 <form action="insert.php" method="post">
 
 <br>Username: <input type="text" name="Username"></br>
@@ -67,3 +44,5 @@ VALUES ('Ivon', 'Grigoriev', sentad@abv.bg)")	;
 
 </body>
 </html>
+
+
