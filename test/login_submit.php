@@ -49,13 +49,13 @@ else
     $mysql_hostname = 'localhost';
 
     /*** mysql username ***/
-    $mysql_username = 'mysql_username';
+    $mysql_username = 'root';
 
     /*** mysql password ***/
-    $mysql_password = 'mysql_password';
+    $mysql_password = '235101Bg';
 
     /*** database name ***/
-    $mysql_dbname = 'phpro_auth';
+    $mysql_dbname = 'base';
 
     try
     {
@@ -103,6 +103,7 @@ else
     }
 }
 ?>
+
 
 <html>
 <head>
