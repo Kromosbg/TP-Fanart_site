@@ -55,7 +55,7 @@ else
     $mysql_password = '235101Bg';
 
     /*** database name ***/
-    $mysql_dbname = 'phpro_auth';
+    $mysql_dbname = 'base';
 
     try
     {
